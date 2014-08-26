@@ -1,162 +1,69 @@
-<?xml version="1.0"?>
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!-- Created with Inkscape (http://www.inkscape.org/) -->
+
 <svg
-    xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
-    xmlns="http://www.w3.org/2000/svg"
-    xmlns:cc="http://creativecommons.org/ns#"
-    xmlns:dc="http://purl.org/dc/elements/1.1/"
-    xmlns:svg="http://www.w3.org/2000/svg"
-    xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
-    xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
-    xmlns:ns1="http://sozi.baierouge.fr"
-    xmlns:xlink="http://www.w3.org/1999/xlink"
-    id="svg2"
-    viewBox="0 0 462.86 792.01"
-    version="1.1"
-  >
-  <g
-      id="layer1"
-      stroke="#000"
-      transform="translate(-140.62 -173.21)"
-    >
-    <path
-        id="path2985"
-        opacity=".99"
-        d="m568.57 620.93c0 116.77-94.66 211.43-211.43 211.43s-211.43-94.66-211.43-211.43v-0.00001"
-        fill-opacity="0"
-        transform="translate(14.904)"
-        stroke-linecap="round"
-        stroke-width="20"
-    />
-    <path
-        id="path2987"
-        opacity=".99"
-        d="m568.57 620.93c0 116.77-94.66 211.43-211.43 211.43s-211.43-94.66-211.43-211.43v-0.00001"
-        fill-opacity="0"
-        transform="translate(14.904)"
-        stroke-linecap="round"
-        stroke-width="40"
-    />
-    <path
-        id="path2989"
-        d="m372.05 832.36v114.29"
-        stroke-width="30"
-        fill="none"
-    />
-    <path
-        id="path2993"
-        opacity=".99"
-        d="m197.14 920.93c0.00001-18.935 59.482-34.286 132.86-34.286 73.375 0 132.86 15.35 132.86 34.286z"
-        transform="translate(42.047 34.286)"
-        stroke-linecap="round"
-        stroke-width="20"
-    />
-    <path
-        id="path2997"
-        opacity=".99"
-        stroke-width="21.455"
-        stroke-linecap="round"
-        d="m372.06 183.94c-77.019-0.00001-139.47 62.45-139.47 139.47v289.62c0 77.019 62.45 139.47 139.47 139.47 77.019 0 139.44-62.45 139.44-139.47v-289.62c0-77.02-62.42-139.47-139.44-139.47z"
-    />
-  </g
-  >
+   xmlns:dc="http://purl.org/dc/elements/1.1/"
+   xmlns:cc="http://creativecommons.org/ns#"
+   xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+   xmlns:svg="http://www.w3.org/2000/svg"
+   xmlns="http://www.w3.org/2000/svg"
+   version="1.1"
+   width="800"
+   height="800"
+   id="svg2">
+  <defs
+     id="defs4" />
   <metadata
-    >
-    <rdf:RDF
-      >
+     id="metadata7">
+    <rdf:RDF>
       <cc:Work
-        >
-        <dc:format
-          >image/svg+xml</dc:format
-        >
+         rdf:about="">
+        <dc:format>image/svg+xml</dc:format>
         <dc:type
-            rdf:resource="http://purl.org/dc/dcmitype/StillImage"
-        />
-        <cc:license
-            rdf:resource="http://creativecommons.org/licenses/publicdomain/"
-        />
-        <dc:publisher
-          >
-          <cc:Agent
-              rdf:about="http://openclipart.org/"
-            >
-            <dc:title
-              >Openclipart</dc:title
-            >
-          </cc:Agent
-          >
-        </dc:publisher
-        >
-        <dc:title
-          >Mic icon</dc:title
-        >
-        <dc:date
-          >2013-10-10T23:57:40</dc:date
-        >
-        <dc:description
-          >A simple mic icon for example for apps</dc:description
-        >
-        <dc:source
-          >https://openclipart.org/detail/184774/mic-icon-by-upacesky-184774</dc:source
-        >
-        <dc:creator
-          >
-          <cc:Agent
-            >
-            <dc:title
-              >Upacesky</dc:title
-            >
-          </cc:Agent
-          >
-        </dc:creator
-        >
-        <dc:subject
-          >
-          <rdf:Bag
-            >
-            <rdf:li
-              >app</rdf:li
-            >
-            <rdf:li
-              >audio</rdf:li
-            >
-            <rdf:li
-              >icon</rdf:li
-            >
-            <rdf:li
-              >mic</rdf:li
-            >
-            <rdf:li
-              >microphone</rdf:li
-            >
-            <rdf:li
-              >music</rdf:li
-            >
-            <rdf:li
-              >recording</rdf:li
-            >
-          </rdf:Bag
-          >
-        </dc:subject
-        >
-      </cc:Work
-      >
-      <cc:License
-          rdf:about="http://creativecommons.org/licenses/publicdomain/"
-        >
-        <cc:permits
-            rdf:resource="http://creativecommons.org/ns#Reproduction"
-        />
-        <cc:permits
-            rdf:resource="http://creativecommons.org/ns#Distribution"
-        />
-        <cc:permits
-            rdf:resource="http://creativecommons.org/ns#DerivativeWorks"
-        />
-      </cc:License
-      >
-    </rdf:RDF
-    >
-  </metadata
-  >
-</svg
->
+           rdf:resource="http://purl.org/dc/dcmitype/StillImage" />
+        <dc:title></dc:title>
+      </cc:Work>
+    </rdf:RDF>
+  </metadata>
+  <g
+     transform="translate(0,-252.36218)"
+     id="layer1">
+    <g
+       transform="matrix(0.78459217,0,0,0.78459217,97.371575,225.70822)"
+       id="g3976">
+      <g
+         transform="translate(13.670214,-25.423482)"
+         id="layer1-7"
+         style="fill:#000000;stroke:#000000;stroke-width:1.27454746">
+        <path
+           d="m 568.57,620.93 c 0,116.77 -94.66,211.43 -211.43,211.43 -116.77,0 -211.43,-94.66 -211.43,-211.43 v -10e-6"
+           transform="translate(14.904,0)"
+           id="path2985"
+           style="opacity:0.98999999;fill:#000000;fill-opacity:0;stroke-width:25.49094963;stroke-linecap:round" />
+        <path
+           d="m 568.57,620.93 c 0,116.77 -94.66,211.43 -211.43,211.43 -116.77,0 -211.43,-94.66 -211.43,-211.43 v -10e-6"
+           transform="translate(14.904,0)"
+           id="path2987"
+           style="opacity:0.98999999;fill:#000000;fill-opacity:0;stroke-width:50.98189926;stroke-linecap:round" />
+        <path
+           d="M 372.05,832.36 V 946.65"
+           id="path2989"
+           style="fill:#000000;stroke-width:38.23642349" />
+        <path
+           d="m 197.14,920.93 c 1e-5,-18.935 59.482,-34.286 132.86,-34.286 73.375,0 132.86,15.35 132.86,34.286 z"
+           transform="translate(42.047,34.286)"
+           id="path2993"
+           style="opacity:0.98999999;fill:#000000;stroke-width:25.49094963;stroke-linecap:round" />
+        <path
+           d="m 372.06,183.94 c -77.019,-1e-5 -139.47,62.45 -139.47,139.47 v 289.62 c 0,77.019 62.45,139.47 139.47,139.47 77.019,0 139.44,-62.45 139.44,-139.47 V 323.41 c 0,-77.02 -62.42,-139.47 -139.44,-139.47 z"
+           id="path2997"
+           style="opacity:0.98999999;fill:#000000;stroke-width:27.34541702;stroke-linecap:round" />
+      </g>
+      <path
+         d="m -211.42859,518.07648 a 580,580 0 1 1 -1160.00001,0 580,580 0 1 1 1160.00001,0 z"
+         transform="matrix(0.82758621,0,0,0.82758621,1040.6896,115.03782)"
+         id="path3004"
+         style="fill:none;stroke:#000000;stroke-width:53.4407196;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-opacity:1;stroke-dasharray:none;marker-start:none" />
+    </g>
+  </g>
+</svg>

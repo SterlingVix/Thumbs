@@ -1,6 +1,7 @@
 var express = require('express');
 var server = express();
 var fs = require('fs'); // include fs moodule for serving HTML page
+var port = 3001;
 
 server.use(express.static(__dirname));
 
@@ -17,5 +18,5 @@ server.get('/', function(req, res){ // listen for this get ( '/' ) request, and 
   res.end( fs.readFileSync('./index.html') ); // CHANGE this to async later???
 });
 
-server.listen(3000);
-console.log("Server is listening on port 3000");
+server.listen(port);
+console.log("Server is listening on port ", port);
