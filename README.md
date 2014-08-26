@@ -1,4 +1,4 @@
-# Project Name #
+# Thumbs #
 
 <!-- 
 
@@ -10,31 +10,34 @@ Keep it simple. 3-4 sentences for each heading. Cut out the fat. Don't make it i
 
 Oh, and I also like to write press-releases in what I call "Oprah-speak" for mainstream consumer products. Imagine you're sitting on Oprah's couch and have just explained the product to her, and then you listen as she explains it to her audience. That's "Oprah-speak", not "Geek-speak".
 
- -->
- 
-## Heading ##
-  > Name the product in a way the reader (i.e. your target customers) will understand.
+-->
 
-## Sub-Heading ##
-  > Describe who the market for the product is and what benefit they get. One sentence only underneath the title.
+<h2>Your microphone is better - use it!</h2>
+Thumbs allows you to use the microphone already on your Apple or Android phone to communicate with a classroom speaker system.
 
-## Summary ##
-  > Give a summary of the product and the benefit. Assume the reader will not read anything else so make this paragraph good.
+<h3>Losing your voice</h3>
+Student participation in classroom settings is, by many metrics, beneficial for learning. As classroom sizes increase and go online, student voices are harder to hear. Literally.
+Passing around microphones is one solution. But it's a bad solution.
 
-## Problem ##
-  > Describe the problem your product solves.
+<h3>Using your thumbs</h3>
+Thumbs uses the microphones students already carry with them on their Apple and Android phones to communicate with classroom speakers.
+They'll use their thumbs to do this. Hence the name.
 
-## Solution ##
-  > Describe how your product elegantly solves the problem.
 
-## Quote from You ##
-  > A quote from a spokesperson in your company.
+<h3>What real people are really saying. Really.</h3>
+"Thumbs works. It makes sound. And it uses thumbs. But I still hate teaching."
+   --- Professor Bummer
 
-## How to Get Started ##
-  > Describe how easy it is to get started.
+<h3>How to Get Started</h3>
+Thumbs is so easy to use, even students can't mess it up.*
+Thumbs users must simply navigate to the web page provided by their instructor to activate the app. When a user presses and holds the microphone icon, they can speak into their phone. Thumbs does the rest!
 
-## Customer Quote ##
-  > Provide a quote from a hypothetical customer that describes how they experienced the benefit.
+<h3>Customer Quote</h3>
+"I use thumbs to ask questions. But I also use it to tap out sick rhythms on the classroom speakers. My teacher hates that, but I don't care about feelings."
+   --- Basically everybody
 
-## Closing and Call to Action ##
-  > Wrap it up and give pointers where the reader should go next.
+<h2>Use your thumbs, find your voice</h2>
+
+
+
+*NOTE: Students can mess it up.
