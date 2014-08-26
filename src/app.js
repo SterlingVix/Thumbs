@@ -11,10 +11,14 @@ $micButton.on('mouseup', function() {
 //     oscillator.stop();
 }); // click function
 
-var streamAudio = function() {
-  console.log("in streamAudio");
-//   debugger;
 
+$micButton.on('event', function() {
+  console.log(event);
+});
+
+
+
+var streamAudio = function() {
   navigator.getUserMedia(
     {audio: true},
     startAudioStream,
@@ -23,37 +27,22 @@ var streamAudio = function() {
 }; // end streamAudio()
 
 var startAudioStream = function(localMediaStream) {
-//   debugger;
-//     var source = audioContext.createMediaStreamSource(stream); // Create a MediaStreamAudioSourceNode & feed the HTMLMediaElement into it
-
-//       { 
-//         // ... use 'stream' ...
-//         var audio = document.getElementsByTagName('audio')[0];
-//         audio.src = stream; 
-//       }
-  audioStream = localMediaStream;
-  console.log('\nlocalMediaStream= ', localMediaStream);
-  
+//   audioElement.play();
   audioElement.src = URL.createObjectURL(localMediaStream);
-  console.log("\nin getUserMedia");
-  console.log('\nsource= ', source);
-  console.log('\ndest= ', dest);
-  console.log('\naudioContext= ', audioContext);
-
-  audioElement.src = dest; // TEST
+  audioElement.volume = 0.8;
   source = audioContext.createMediaStreamSource(localMediaStream);
-  source.connect(dest);
-  audioElement.play();
-//         source.connect(audioContext.destination);
-
-//         var gainNode = audioContext.createGain();
-//         gainNode.gain=1;
-//         source.connect(gainNode);
-//         gainNode.connect(audioContext.destination);
+  audioStream = source.mediaStream;
+  audioStreamTrack = (audioStream.getAudioTracks())[0];
+  
+  
+  console.log(audioElement, audioContext, localMediaStream, audioStream, source, audioStreamTrack);
 }; // end stream
 
 var stopAudioStream = function() {
-  console.log("inside stopAudioStream()"); // 
+  audioStreamTrack.stop();
+  audioElement.pause(); // might break
+  audioElement.src = ""; // end stream source
+  // audioGainNode.disconnect(audioDestination);
 }; // end stopAudioStream();
 
 
