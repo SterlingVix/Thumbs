@@ -1,0 +1,25 @@
+{
+  "name": "MelocikSolo",
+  "version": "0.0.1",
+  "description": "Thumbs",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/SterlingVix/2014-07-solo.git"
+  },
+  "author": "Aaron Melocik",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/SterlingVix/2014-07-solo/issues"
+  },
+  "homepage": "https://github.com/SterlingVix/2014-07-solo",
+  "dependencies": {
+    "express": "^4.8.5",
+    "jquery": "^2.1.1",
+    "nodejs": "0.0.0",
+    "socket.io": "^1.0.6"
+  }
+}

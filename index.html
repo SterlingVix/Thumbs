@@ -1,0 +1,26 @@
+<!doctype html>
+<head>
+  <title>Thumbs</title>
+  <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+  <link rel="stylesheet" href="css/style.css"/>
+<!--   <script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script> -->
+  <script src="node_modules/jquery/dist/jquery.js"></script>
+</head>
+<body>
+  <div class="main-screen">
+    <div class="mic-button">
+      <center>
+        <img class="mic-icon" src="img/mic.svg" alt="Hold to talk"/>
+      </center>
+    </div>
+  </div>
+  <audio id="live_audio" autoplay controls></audio>
+  <script src="src/pageData.js"></script>
+  <script src="server/server.js"></script>
+  <script src="src/app.js"></script>
+<!--   <script>
+    $( document ).ready( function() {
+      initializeApp();
+    });
+  </script> -->
+</body>
