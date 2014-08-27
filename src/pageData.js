@@ -1,16 +1,16 @@
 var windowContext = this;
 
+var $gain = $('.gain');
+var gainValue = $gain[0].value;
+
 var $micButton = $('.mic-button');
 $micButtonWidth = $micButton.width();
 $micButton.height = $micButtonWidth;
+var micOnFlag = false;
 
 var $mainScreen = $('.main-screen');
 $mainScreen.width = $('html').clientWidth || 320;
 $mainScreen.height = $('html').clientHeight || 480;
-
-// var $micIcon = $('.mic-icon');
-// $micIcon.height($micButtonWidth * .8);
-// $micIcon.width($micButtonWidth * .8);
 
 var audioElement = document.getElementById("live_audio");
 var audioVolume = audioElement.volume;
@@ -26,14 +26,11 @@ navigator.getUserMedia = (navigator.getUserMedia
 
 var audioContext = new (window.AudioContext || window.webkitAudioContext)(); // new context with compatibility
 
-
 var audioDestination = audioContext.createMediaStreamDestination();
 // audioDestination = $.getJSON('/thumb', function( data ) { return data;}); // get audioContext item from server
 
-
-
 var audioGainNode = audioContext.createGain();
-    audioGainNode.gain=1;
+    audioGainNode.gain=.5;
 
 // audioGainNode.connect(audioDestination); // connect gain node to destination
 // var audioStream;
