@@ -25,7 +25,12 @@ navigator.getUserMedia = (navigator.getUserMedia
                        || navigator.msGetUserMedia); // define which getUserMedia
 
 var audioContext = new (window.AudioContext || window.webkitAudioContext)(); // new context with compatibility
+
+
 var audioDestination = audioContext.createMediaStreamDestination();
+// audioDestination = $.getJSON('/thumb', function( data ) { return data;}); // get audioContext item from server
+
+
 
 var audioGainNode = audioContext.createGain();
     audioGainNode.gain=1;
