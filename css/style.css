@@ -1,18 +1,13 @@
 body {
   background: #222222;
 }
-.main-screen {
-  width:inherit;
-  height:inherit;  
-  border: 3px solid #000;
-}
 .mic-button {
+  width: 100%;
   margin: 4% auto;
-  width: 200px;
-  height: 200px;
   border-radius: 50%;
   overflow: hidden;
   background: #CCCCCC;
 }
-.mic-icon {
+.gain {
+  width: 100%;
 }

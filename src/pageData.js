@@ -1,5 +1,10 @@
 var windowContext = this;
 
+var WIDTH = window.innerWidth;
+var HEIGHT = window.innerHeight;
+
+var isDestinationMachine = false; // flag for destination machine
+
 var $gain = $('.gain');
 var gainValue = $gain[0].value;
 
@@ -9,8 +14,14 @@ $micButton.height = $micButtonWidth;
 var micOnFlag = false;
 
 var $mainScreen = $('.main-screen');
-$mainScreen.width = $('html').clientWidth || 320;
-$mainScreen.height = $('html').clientHeight || 480;
+$mainScreenW = $('body').clientWidth || 320;
+$mainScreenH = $('body').clientHeight || 480;
+
+// if(WIDTH < HEIGHT) { // width is smaller
+//   $micButton.css('width', '100%');
+// } else { // height is smaller
+    
+// } // end (resize mic button)
 
 var audioElement = document.getElementById("live_audio");
 var audioVolume = audioElement.volume;
@@ -30,9 +41,8 @@ var audioDestination = audioContext.createMediaStreamDestination();
 // audioDestination = $.getJSON('/thumb', function( data ) { return data;}); // get audioContext item from server
 
 var audioGainNode = audioContext.createGain();
-    audioGainNode.gain=.5;
+    audioGainNode.connect(audioDestination);
 
-// audioGainNode.connect(audioDestination); // connect gain node to destination
 // var audioStream;
 // audioStream.connect(audioDestination); // connect audio stream to destination
 
@@ -43,3 +53,13 @@ var audioStreamURL; // trackURL
 var noStreamFlag = true;
 
 // .connect() is on    sourceNode,    audioGainNode,    audioDestination
+
+// source.connect(gainNode)
+// gainNode.connect(destination)
+
+var beDestinationMachine = function() {
+  $.getJSON('/destination', function( data ) {
+    isDestinationMachine = true;
+  });
+  audioGainNode.connect(audioDestination);
+}

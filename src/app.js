@@ -17,9 +17,12 @@ $micButton.on('click', function() {
 }); // click function
 
 $gain.on('mouseup', function() {
+//   gainNode.gain.value = (CurY/HEIGHT) * maxVol;
+  
   gainValue = $gain[0].value; // update gain value
-  audioGainNode.gain.value=gainValue;
-  console.log(gainValue, ", ", audioGainNode.gain.value);
+  gainValueAsNumber = $gain[0].valueAsNumber;
+  audioGainNode.gain.value = gainValueAsNumber;
+  console.log(gainValue, ", ", $gain[0].valueAsNumber , ", ", audioGainNode.gain.value);
 });
 
 var streamAudio = function() {
@@ -54,9 +57,16 @@ var applyStreamToAudioNodes = function() {
   sourceNode.connect(audioGainNode); // connect audio stream to destination
   audioGainNode.connect(audioDestination); // connect audio stream to destination
   audioStreamTrack = (audioStream.getAudioTracks())[0];
+  console.log(audioStreamTrack);
 
-  audioElement.src = audioStreamURL; // !!!!!!!!!!!!!!
-  audioElement.volume = 0.8;
+  if (isDestinationMachine) {
+    assignAudioStream(audioStreamURL); // assign audio stream
+  } else {// is not destination machine
+    
+    // 
+    
+  } // end (if is destination mechine)
+
 }; // end applyStreamToAudioNodes
 
 var stopAudioStream = function() {
@@ -65,18 +75,13 @@ var stopAudioStream = function() {
 //   audioGainNode.disconnect(audioDestination);
 }; // end stopAudioStream();
 
-
+var assignAudioStream = function(streamURL) {
+  audioElement.src = streamURL; // !!!!!!!!!!!!!!  
+  audioElement.volume = 0.8;
+}; // end assignAudioStream
 
 
 /////////////////////////////////////////////////////////////////
-
-
-var audioDestinationJSON = {
-  'audioDestination' : audioDestination
-};
-
-
-
 
 
 // $.post(url)
@@ -94,35 +99,13 @@ $.getJSON('/destination', {'audioDestination': audioDestination}); // get audioD
 
 
 var getJSONFunctionFast = function() {
-$.getJSON('/thumb', function( data ) { console.log(data); }); // end immediate function
+  $.getJSON('/thumb', function( data ) { console.log(data); }); // end immediate function
 }; // end getJSONFunctionFast
 // data = data.responseJSON (Object), responseText (text)
 
-
-
 var getJSONFunction = function() {
 $.getJSON('/thumb')
-.done(
-  function( data ) {
-    console.log("in getJSON function");
-    console.log(data.audioDestination);
-    audioDestination = data.audioDestination;
+  .done(
+    function( data ) {console.log("in getJSON function"); console.log(data.audioDestination); audioDestination = data.audioDestination;
 }); // end GET with promise
 };
-
-
-// $.getJSON( "ajax/test.json", function( data ) {
-//   var items = [];
-//   $.each( data, function( key, val ) {
-//     items.push( "<li id='" + key + "'>" + val + "</li>" );
-//   });
- 
-//   $( "<ul/>", {
-//     "class": "my-new-list",
-//     html: items.join( "" )
-//   }).appendTo( "body" );
-// });
-
-
-// JSON.stringify(audioDestination);
-//JSON.parse(;)
